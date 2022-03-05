@@ -1,0 +1,14 @@
+<p>Add new beer</p>
+
+<form (ngSubmit)="addNewBeer()">
+    <label>Name:</label><br>
+    <input type="text" [(ngModel)]="newBeer.name" name="name" /><br>
+
+    <label>Country:</label><br>
+    <input type="text" [(ngModel)]="newBeer.country" name="country" /><br>
+
+    <label>Price: </label><br>
+    <input type="number" [(ngModel)]="newBeer.price" name="price"/><br>
+
+    <button>Add</button>
+</form>
